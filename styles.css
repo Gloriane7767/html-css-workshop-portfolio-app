@@ -17,6 +17,7 @@
     padding: 35px 12px;
     z-index: 100;
     backdrop-filter: blur(10px);
+    margin-bottom: 50px;
 } 
 
 .logo{
@@ -32,7 +33,7 @@
                 0 0 50px rgb(180, 120, 120);
 }
 
-span {
+.span-logo {
     color:rgb(180, 120, 120);
 }
 
@@ -71,5 +72,115 @@ button:hover {
     color: black;
 }
 
+.home {
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: rgb(241,241,241);
+    padding: 30px 10px;
+    
+}
+
+.home-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
+.span-home-content {
+color: orange;
+}
+
+.home-content h1 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin:25px 0 30px;
+ 
+}
+
+.btn-box {
+    display: flex;
+    width: 300px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-1 {
+    background-color: black;
+    padding: 15px 28px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition:0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2, .btn-3 {
+    background-color: orange;
+    padding: 15px 28px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition:0.3s ease;
+    cursor: pointer;
+}
 
 
+.btn-2:hover{
+    background-color: white;
+    color: orange;
+    border: 2px solid black;
+}
+
+.btn-3 {
+    background-color: black;
+    padding: 15px 28px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition:0.3s ease;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.home-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: center;
+    flex-shrink: 0;
+}
