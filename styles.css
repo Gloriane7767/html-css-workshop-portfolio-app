@@ -4,31 +4,38 @@
     font-family: poppins, sans-serif;
     text-decoration: none;
     list-style: none;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+    width: 100%; overflow-x: hidden; /* prevents horizontal scroll from small overflow */overflow-x: hidden;
 }
 
 
 /* HEADER */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* left, center, right */
     align-items: center;
+    width: 100%;
+    padding: 20px 5%;
     background-color: #555;
     position: sticky;
     top: 0;
-    width: 100vw;
-    padding: 20px 5%;
     z-index: 100;
-} 
+}
+ 
 
 /* Logo */
+
+.header-left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
 .logo{
     font-size: 24px;
     font-weight: bold;
@@ -44,10 +51,11 @@ html, body {
 }
 
 /* Nav Links */
-    .nav-bar {
+.nav-bar {
     display: flex;
     align-items: center;
-    gap: 50px; /* spacing between links */
+    gap: 30px;
+    flex-wrap: wrap; /* allows wrapping if too wide */
 }
 
 .nav-bar a {
@@ -62,16 +70,15 @@ html, body {
 }
 
 /* Header Button */
-.header .button {
-    background-color: black;
-    border: 2px solid transparent;
-    color: white;
-    border-radius: 10px;
+.header-right .button {
     padding: 10px 15px;
-    font-size: 16px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
     font-weight: bold;
-    cursor: pointer;
+    white-space: nowrap; /* prevents button text from breaking */
 }
+
 
 .header .button:hover  {
     background-color: orangered;
@@ -128,7 +135,7 @@ color: orangered;
     display: flex;
     width: 345px;
     display: flex;
-    gap: em;
+    gap: 30px;
 }
 
 .btn-1 {
@@ -140,7 +147,7 @@ color: orangered;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 16px;
-    transition:0.3s ease;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
@@ -153,7 +160,7 @@ color: orangered;
 }
 
 .btn-2 {
-    background-color: orangered;
+        background-color: orangered;
     padding: 10px 20px;
     color: white;
     border: 2px solid transparent;
@@ -161,7 +168,7 @@ color: orangered;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 16px;
-    transition:0.3s ease;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
@@ -172,7 +179,6 @@ color: orangered;
     border: 2px solid black;
 }
 
-
 .image-box img{
     max-width: 80%;
     border-radius: 50%;
@@ -181,11 +187,12 @@ color: orangered;
 
 /* CONTACT FORM */
 .form-container {
-        width: 100%;
-    padding: 50px 5%;
+    width: 100%;
+    padding: 30px 5%;
     background-color: rgb(241, 241, 241);
     text-align: center;
 }
+
 
 .contact-form form {
     width: 100%;
@@ -209,7 +216,7 @@ color: orangered;
 /* TABLE SECTION */
 .table-container {
     width: 100%;
-    padding: 50px 5%; /* match header/footer padding */
+    padding: 30px 5%; /* match header/footer padding */
     background-color: white;
     text-align: center;
 }
@@ -290,6 +297,10 @@ color: orangered;
 .footer ul li {
     display: inline-block;
     margin: 0 15px;
+}
+
+.footer ul li a {
+    color: white;
 }
 
 .footer ul li a:hover {
