@@ -269,3 +269,9 @@ color: orangered;
     color: white;
     font-size: 12px;
 }
+
+.portfolio-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
