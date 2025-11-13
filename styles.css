@@ -1,3 +1,5 @@
+
+/* GLOBAL STYLES */
 *{
     font-family: poppins, sans-serif;
     text-decoration: none;
@@ -5,6 +7,13 @@
     box-sizing: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
@@ -27,14 +36,11 @@
     transition: 0.3s ease;
 }
 
+
 .logo:hover {
     color:orangered;
     text-shadow:0 0 50px orangered,  
                 0 0 50px orangered;
-}
-
-.span-logo {
-    color:red;
 }
 
 .nav-bar {
@@ -207,6 +213,52 @@ color: orangered;
     resize:none;
 }
 
+
+/* TABLE SECTION */
+.table-container {
+    width: 100%;
+    padding: 60px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.table-container h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.table-container .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.portfolio-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.portfolio-table table {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.portfolio-table th, 
+.portfolio-table td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}   
+
+.portfolio-table {
+    background-color: White;
+    color: black;
+}
+
 .footer {
     position:relative;
     bottom: 0;
@@ -268,10 +320,5 @@ color: orangered;
     text-align: center;
     color: white;
     font-size: 12px;
-}
-
-.portfolio-table {
-    width: 100%;
-    overflow-x: auto;
 }
 
