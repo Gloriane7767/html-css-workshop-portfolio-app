@@ -79,12 +79,33 @@ html, body {
     white-space: nowrap; /* prevents button text from breaking */
 }
 
-
 .header .button:hover  {
     background-color: orangered;
     color: black;
 }
 
+/* HOME SECTION */
+.home-content h3 {
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.span-home-content {
+color: orangered;
+}
+
+.home-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: -25px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin:25px 0 30px;
+    text-align: justify;
+ 
+}
 
 /* HOME SECTION */
 .main.content {
@@ -109,27 +130,6 @@ html, body {
     max-width: 800px;
 }
 
-.home-content h3 {
-    font-size: 25px;
-    margin-top: 100px;
-}
-
-.span-home-content {
-color: orangered;
-}
-
-.home-content h1 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-top: -25px;
-}
-
-.home-content p {
-    font-size: 18px;
-    margin:25px 0 30px;
-    text-align: justify;
- 
-}
 
 .btn-box {
     display: flex;
@@ -299,7 +299,7 @@ color: orangered;
     margin: 0 15px;
 }
 
-.footer ul li a {
+.footer ul li {
     color: white;
 }
 
