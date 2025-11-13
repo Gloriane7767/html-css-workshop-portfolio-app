@@ -84,27 +84,72 @@ html, body {
     color: black;
 }
 
-/* HOME SECTION */
-.home-content h3 {
-    font-size: 25px;
-    margin-top: 100px;
+/* ABOUT SECTION */
+.about-section {
+    width: 100%;
+    padding: 50px 5%;  /* same left/right padding as other sections */
+    background-color: white;
+    text-align: left;
+    box-sizing: border-box;
 }
 
-.span-home-content {
-color: orangered;
+.about-section h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-align: left; /* aligns like experience */
+  margin-left: 0; /* remove any unwanted left margin */
 }
 
-.home-content h1 {
-    font-size: 30px;
+.about-content {
+    max-width: 1000px;   /* optional, just to limit content width */
+    /* Remove margin: 0 auto; to align with other sections */
+    margin: 0;           /* align left with padding of section */
+}
+
+.about-section h2 {
+    font-size: 48px;   /* You can adjust this number as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;  
+}
+
+.about-section h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin: 10px 0 20px;
     line-height: 1.2;
-    margin-top: -25px;
 }
 
-.home-content p {
+.span-about,
+.span-home-content {
+    color: orangered;
+}
+
+.about-section p {
     font-size: 18px;
-    margin:25px 0 30px;
+    margin-bottom: 15px;
+    line-height: 1.6;
     text-align: justify;
- 
+}
+
+.about-highlights ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-highlights li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Reuse existing button styles */
+.about-section .btn-1 {
+    margin-top: 20px;
+    display: inline-block;
 }
 
 /* HOME SECTION */
@@ -124,6 +169,13 @@ color: orangered;
     padding: 30px 5%; /* match header/footer padding */
     background-color: white;
     
+}
+
+.home-content h2 {
+    font-size: 48px;   /* You can adjust this number as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;  /* keep it consistent with the rest of the page */
 }
 
 .home-content {
@@ -199,6 +251,15 @@ color: orangered;
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* Align Contact Me h2 with other sections */
+.contact-form h2 {
+    text-align: left;       /* align text to the left */
+    padding-left: 5%;       /* match the padding of other sections like Experience */
+    margin-bottom: 20px;    /* optional spacing below the heading */
+    font-size: 48px;        /* same size as other h2 */
+}
+
 
 .contact-form form .input-box input,
 .contact-form form textarea {
@@ -299,7 +360,7 @@ color: orangered;
     margin: 0 15px;
 }
 
-.footer ul li {
+.footer ul li a {
     color: white;
 }
 
