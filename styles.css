@@ -1,20 +1,30 @@
 
-/* GLOBAL STYLES */
+/* GLOBAL STYLES */ 
+/* It resets the browser setting so the web page behave thesame on all browsers
+and applies the styles to the entire web page*/
 *{
     font-family: poppins, sans-serif;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box; /* add up padding and border inclusive to the weight and height*/
 }
 
+/* to enabble the page flush completely to the top and left cos though we used the universal selector
+some browsers still give the <body> tag a small default margin (usually 8px)*/
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%; overflow-x: hidden; /* prevents horizontal scroll from small overflow */overflow-x: hidden;
+    width: 100%; /*ensures the <html> and <body> stretch across the entire width of the browser window just so caculations are accurate, especially when working with 100%-width sections or background colors.*/
+    overflow-x: hidden; /* prevents horizontal scroll from small overflow */
 }
 
+.logo span, .about-span, .home-content-span {
+    color: red;
+    transition: 0.3s ease;
+}
 
 /* HEADER */
+/* turns this header to a flex box contatiner which makes it super easy to line up things next to each other (horizontally-row or vertically-column) and control their spacing.*/
 .header {
     display: flex;
     justify-content: space-between; /* left, center, right */
@@ -22,28 +32,21 @@ html, body {
     width: 100%;
     padding: 20px 5%;
     background-color: #555;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky; /*Stick it to the top while scrolling*/
 }
  
-
 /* Logo */
-
 .header-left .logo {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    transition: 0.3s ease;/* animation last for 3secs and should not be fast*/
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    transition: 0.3s ease;
-}
-
-
+/* → horizontal offset (no left or right shift)
+→ vertical offset (no up or down shift)
+50px → blur size (how soft and glowing the shadow looks
+You repeated it twice it makes the glow look stronger and brighter, because two identical shadows overlap.*/
 .logo:hover {
     color:orangered;
     text-shadow:0 0 50px orangered,  
@@ -76,7 +79,7 @@ html, body {
     background-color: black;
     color: white;
     font-weight: bold;
-    white-space: nowrap; /* prevents button text from breaking */
+    line-height: 1.2;
 }
 
 .header .button:hover  {
@@ -87,23 +90,10 @@ html, body {
 /* ABOUT SECTION */
 .about-section {
     width: 100%;
-    padding: 50px 5%;  /* same left/right padding as other sections */
+    padding: 50px 5%;  /* 50px top/ bottom fixed, 5% left and right responsive  to shrinks*/
     background-color: white;
     text-align: left;
     box-sizing: border-box;
-}
-
-.about-section h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  text-align: left; /* aligns like experience */
-  margin-left: 0; /* remove any unwanted left margin */
-}
-
-.about-content {
-    max-width: 1000px;   /* optional, just to limit content width */
-    /* Remove margin: 0 auto; to align with other sections */
-    margin: 0;           /* align left with padding of section */
 }
 
 .about-section h2 {
@@ -124,8 +114,8 @@ html, body {
     line-height: 1.2;
 }
 
-.span-about,
-.span-home-content {
+
+.home-content-span {
     color: orangered;
 }
 
@@ -154,34 +144,28 @@ html, body {
 
 /* HOME SECTION */
 .main.content {
-    width: 100vw;          /* full viewport width */
-    box-sizing: border-box; /* include padding in width */
+    width: 100vw; /* It doesn’t matter what container the element is in — it stretches across the whole screen width. */
     padding: 0 5%;  
 }
 
 .home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; /* min-height: 100vh; → make this element at least as tall as the screen, but allow it to grow taller if needed.*/
     display: flex;
     align-items: flex-start;
     gap: 2em;
     justify-content: space-between;
-    padding: 30px 5%; /* match header/footer padding */
+    padding: 30px 5%; 
     background-color: white;
     
 }
 
 .home-content h2 {
-    font-size: 48px;   /* You can adjust this number as needed */
+    font-size: 48px;   
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: left;  /* keep it consistent with the rest of the page */
+    text-align: left;  
 }
-
-.home-content {
-    max-width: 800px;
-}
-
 
 .btn-box {
     display: flex;
@@ -207,12 +191,11 @@ html, body {
     background-color: orangered;
     color: white;
     border: 2px solid orangered;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.3);
+    transition: 0.3sec ease;
 }
 
 .btn-2 {
-        background-color: orangered;
+    background-color: orangered;
     padding: 10px 20px;
     color: white;
     border: 2px solid transparent;
@@ -241,29 +224,27 @@ html, body {
 .form-container {
     width: 100%;
     padding: 30px 5%;
-    background-color: rgb(241, 241, 241);
+    background-color:white;
     text-align: center;
 }
 
 
 .contact-form form {
     width: 100%;
-    max-width: 800px;
+    max-width: 80%; /*the element won’t get wider than 800 pixels, no matter how big the screen is.*/
     margin: 0 auto;
 }
 
-/* Align Contact Me h2 with other sections */
 .contact-form h2 {
-    text-align: left;       /* align text to the left */
-    padding-left: 5%;       /* match the padding of other sections like Experience */
-    margin-bottom: 20px;    /* optional spacing below the heading */
-    font-size: 48px;        /* same size as other h2 */
+    text-align: left;     
+    padding-left: 5%;       
+    margin-bottom: 20px;   
+    font-size: 48px;        
 }
-
 
 .contact-form form .input-box input,
 .contact-form form textarea {
-    width: 100%; /* use 100% of container */
+    width: 100%; 
     padding: 15px;
     font-size: 18px;
     color: black;
@@ -273,11 +254,10 @@ html, body {
     resize: none;
 }
 
-
 /* TABLE SECTION */
 .table-container {
     width: 100%;
-    padding: 30px 5%; /* match header/footer padding */
+    padding: 30px 5%; 
     background-color: white;
     text-align: center;
 }
@@ -321,6 +301,12 @@ html, body {
     text-align: center;
 }
 
+/*Position Type	What Happens
+static (default)	Normal flow, no offsets
+relative	Normal flow + can shift with top/right/bottom/left
+absolute	Removed from flow, positioned relative to nearest positioned ancestor
+fixed	Stays in place relative to viewport
+sticky	Sticks to a position when scrolling*/
 .footer .social {
     display: flex;
     justify-content: center;
@@ -334,7 +320,7 @@ html, body {
     color: white;
     height: 40px;
     line-height: 36px;
-    display: inline-block;
+    display: inline-block; /*Sit next to other elements like inline, but let me set width, height, and padding like a block.”*/
     text-align: center;
     margin: 0 8px;
     transition: 0.3s ease;
