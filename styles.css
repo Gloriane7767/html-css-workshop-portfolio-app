@@ -14,7 +14,7 @@
     top:0px;
     left: 0px;
     width: 100%;
-    padding: 35px 12px;
+    padding: 30px 5%;
     z-index: 100;
     backdrop-filter: blur(10px);
     margin-bottom: 50px;
@@ -40,7 +40,7 @@
 .nav-bar {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-bar a {
@@ -62,7 +62,7 @@ button {
     padding: 10px 12px;
     font-size: 16px;
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 5%;
    
 }
 
@@ -159,9 +159,9 @@ color: orangered;
 
 
 .image-box img{
-    width: 300px;
+    max-width: 80%;
     border-radius: 50%;
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 .form-container {
@@ -171,7 +171,7 @@ color: orangered;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    padding: 20px 5%;
 }
 
 .contact-form {
@@ -182,7 +182,7 @@ color: orangered;
 }
 
 .contact-form form {
-    max-width:50em;
+    max-width:95%;
     margin:1rem auto;
     text-align: center;
     margin-bottom: 3em;
@@ -197,7 +197,7 @@ color: orangered;
 .contact-form form .input-box input, 
 .contact-form form textarea {
     width: 100%;
-    padding: 1.5em;
+    padding: 15px;
     font-size:18px;
     color: black;
     background-color: rgb(241,241,241);
