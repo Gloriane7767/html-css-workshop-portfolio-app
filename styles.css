@@ -177,7 +177,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
 .btn-1 {
     background-color: black;
     padding: 10px 20px;
-    color: white;
+    color: orangered;
     border: 2px solid transparent;
     border-radius: 8px;
     letter-spacing: 1px;
@@ -209,7 +209,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
 
 
 .btn-2:hover{
-    background-color: white;
+    background-color: black;
     color: orangered;
     border: 2px solid black;
 }
