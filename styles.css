@@ -18,7 +18,7 @@ html, body {
     overflow-x: hidden; /* prevents horizontal scroll from small overflow */
 }
 
-.logo span, .about-span, .home-content-span {
+.logo span, .intro-span, .intro-content-span {
     color: red;
     transition: 0.3s ease;
 }
@@ -87,68 +87,69 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     color: black;
 }
 
-/* ABOUT SECTION */
-.about-section {
+/* Intro SECTION */
+.intro-section {
     width: 100%;
     padding: 50px 5%;  /* 50px top/ bottom fixed, 5% left and right responsive  to shrinks*/
     background-color: white;
     text-align: left;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 2em;
 }
 
-.about-section h2 {
+.intro-section h2 {
     font-size: 48px;   /* You can adjust this number as needed */
     font-weight: bold;
     margin-bottom: 10px;
     text-align: left;  
 }
 
-.about-section h3 {
+.intro-section h3 {
     font-size: 24px;
     margin: 10px 0;
 }
 
-.about-section h1 {
+.intro-section h1 {
     font-size: 36px;
     margin: 10px 0 20px;
     line-height: 1.2;
 }
 
 
-.home-content-span {
+.about-span {
     color: orangered;
 }
 
-.about-section p {
+.intro-section p {
     font-size: 18px;
     margin-bottom: 15px;
     line-height: 1.6;
     text-align: justify;
 }
 
-.about-highlights ul {
-    list-style: none;
-    padding-left: 0;
+.intro-image-box img{
+    max-width: 80%;
+    border-radius: 50%;
+    margin-top: 100px;
 }
 
-.about-highlights li {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
 
 /* Reuse existing button styles */
-.about-section .btn-1 {
+.intro-section .btn-1 {
     margin-top: 20px;
     display: inline-block;
 }
 
-/* HOME SECTION */
-.main.content {
+/* ABOUT SECTION */
+.about-container {
     width: 100vw; /* It doesn’t matter what container the element is in — it stretches across the whole screen width. */
     padding: 0 5%;  
 }
 
-.home {
+.about {
+    background-color: black;
     width: 100%;
     min-height: 100vh; /* min-height: 100vh; → make this element at least as tall as the screen, but allow it to grow taller if needed.*/
     display: flex;
@@ -160,7 +161,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     
 }
 
-.home-content h2 {
+.about-content h2 {
     font-size: 48px;   
     font-weight: bold;
     margin-bottom: 10px;
@@ -174,7 +175,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     gap: 30px;
 }
 
-.btn-1 {
+.btn-1, .btn-2 {
     background-color: black;
     padding: 10px 20px;
     color: orangered;
@@ -185,36 +186,18 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     font-size: 16px;
     transition: 0.3s ease;
     cursor: pointer;
+    width: 150px;
 }
 
-.btn-1:hover{
+.btn-1:hover, .btn-2:hover {
     background-color: orangered;
     color: white;
     border: 2px solid orangered;
-    transition: 0.3sec ease;
-}
-
-.btn-2 {
-    background-color: orangered;
-    padding: 10px 20px;
-    color: white;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.3s ease;
-    cursor: pointer;
 }
 
 
-.btn-2:hover{
-    background-color: black;
-    color: orangered;
-    border: 2px solid black;
-}
 
-.image-box img{
+.about-image-box img{
     max-width: 80%;
     border-radius: 50%;
     margin-top: 100px;
