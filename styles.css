@@ -117,11 +117,6 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     line-height: 1.2;
 }
 
-
-.about-span {
-    color: orangered;
-}
-
 .intro-section p {
     font-size: 18px;
     margin-bottom: 15px;
@@ -129,10 +124,6 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     text-align: justify;
 }
 
-.about .btn-1:hover  {
-    background-color: white;
-    color: orangered;
-}
 .intro-image-box img{
     max-width: 80%;
     border-radius: 50%;
@@ -178,6 +169,10 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     color: white;
 }
 
+.about-span {
+    color: orangered;
+}
+
 .btn-box {
     display: flex;
     align-items: center;
@@ -200,6 +195,11 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     height: 45px;
 }
 
+.about .btn-1:hover  {
+    background-color: white;
+    color: orangered;
+}
+
 .btn-2 {
     background-color: black;
     padding: 10px 20px;
@@ -216,9 +216,9 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     margin-top: 10px;
 }
 
-.btn-1:hover, .btn-2:hover {
-    background-color: orangered;
-    color: white;
+.intro-section .btn-1:hover, .intro-section .btn-2:hover {
+    background-color: white;
+    color: orangered;
     border: 2px solid orangered;
 }
 
@@ -263,7 +263,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
 }
 
 input[type="submit"]:hover {
-    background-color: black !important;
+    background-color: white !important;
     color: orangered !important;
     border: 2px solid orangered !important;
 }
