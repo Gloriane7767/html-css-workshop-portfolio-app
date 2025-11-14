@@ -262,11 +262,12 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     resize: none;
 }
 
-.contact-form input[type="submit"]:hover {
-    background-color: orangered;
-    color: white;
-    border: 2px solid orangered;
+input[type="submit"]:hover {
+    background-color: black !important;
+    color: orangered !important;
+    border: 2px solid orangered !important;
 }
+
 
 /* TABLE SECTION */
 .table-container {
