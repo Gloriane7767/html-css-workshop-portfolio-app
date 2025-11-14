@@ -32,6 +32,44 @@ The webpage features hover effects, a sticky header, and responsive layout techn
 
 ---
 
+## Live Demo / Screenshot
+![Screenshot of the project](./images/portfolio.png.png)  
+> Replace `screenshot.png` with your actual screenshot file, or use a link to your hosted image.
+
+- Optional live site (if deployed):  
+  **Live Demo:** https://<gloriane7767>.github.io/<html-css-workshop-portfolio-app>/
+---
+
+## Deployment to GitHub Pages
+
+I deployed this website using **GitHub Pages**, which hosts static sites directly from a GitHub repository.
+
+### Steps I followed:
+
+1. **Uploaded the project to GitHub**
+   - Created a new repository  
+   - Added all project files  
+   - Committed and pushed everything to the `main` branch  
+
+2. **Enabled GitHub Pages**
+   - Opened the **Settings** tab of the repository  
+   - Selected **Pages** from the left sidebar  
+   - Under **Source**, selected:
+     ```
+     Branch: main
+     Folder: /root
+     ```
+   - Clicked **Save**  
+
+3. **Waited for deployment**
+   - GitHub took a few seconds to publish the site  
+   - A live link appeared at the top of the Pages settings  
+
+4. **Accessed the live site**
+   The final site becomes available at:
+
+   https://<gloriane7767>.github.io/<html-css-workshop-portfolio-app>/
+
 ## Technologies
 - **HTML5**  
 - **CSS3**  
