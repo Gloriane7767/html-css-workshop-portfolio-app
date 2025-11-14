@@ -170,12 +170,12 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
 
 .btn-box {
     display: flex;
-    width: 345px;
-    display: flex;
+    align-items: center;
     gap: 30px;
+    margin-top: 20px;
 }
 
-.btn-1, .btn-2 {
+.btn-1 {
     background-color: black;
     padding: 10px 20px;
     color: orangered;
@@ -187,6 +187,23 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
     transition: 0.3s ease;
     cursor: pointer;
     width: 150px;
+    height: 45px;
+}
+
+.btn-2 {
+    background-color: black;
+    padding: 10px 20px;
+    color: orangered;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
 }
 
 .btn-1:hover, .btn-2:hover {
@@ -219,7 +236,7 @@ You repeated it twice it makes the glow look stronger and brighter, because two 
 }
 
 .contact-form h2 {
-    text-align: left;     
+    text-align: center;     
     padding-left: 5%;       
     margin-bottom: 20px;   
     font-size: 48px;        
